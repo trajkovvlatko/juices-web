@@ -1,0 +1,101 @@
+.card-image {
+  height: 0;
+  padding-bottom: 100%;
+}
+
+.card {
+  padding-bottom: 25px;
+}
+
+.card-read-more {
+  margin-left: auto !important;
+}
+
+.card-share-copied {
+  position: absolute;
+  background: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.card-tags {
+  margin-top: 15px;
+}
+
+.card-tag {
+  margin-right: 3px;
+  font-size: 12px !important;
+  height: 28px !important;
+}
+
+.card-info {
+  position: relative;
+  width: calc(50% - 15px);
+  display: inline-block;
+  padding: 15px;
+  overflow: auto;
+  height: 0;
+  padding-bottom: calc(50% - 50px);
+}
+
+.recipe {
+  width: calc(100vw - 50px);
+  height: auto;
+  margin: 0 auto;
+  background-color: white;
+  margin-top: 25px;
+}
+
+.modal .recipe {
+  width: 100%;
+  margin: 0;
+}
+
+.card-text {
+  position: absolute;
+}
+
+.card-images {
+  width: calc(50% - 25px);
+  display: inline-block;
+  vertical-align: top;
+}
+
+.card-images .each-slide div {
+  height: 0 !important;
+  padding-bottom: 100% !important;
+}
+
+@media (max-width: 768px) {
+  .card-images {
+    width: 100%;
+  }
+
+  .card-info {
+    width: calc(100% - 30px);
+    height: auto;
+    overflow: hidden;
+    padding-bottom: 15px;
+  }
+
+  .card-text {
+    position: relative;
+  }
+
+  .recipe {
+    overflow-y: auto !important;
+    width: calc(100% - 25px);
+    margin-top: 13px;
+    height: calc(100vh - 85px);
+  }
+
+  .modal .recipe {
+    height: auto;
+  }
+
+  .modal .recipe > .card-info {
+    padding-bottom: inherit;
+    height: 100%;
+  }
+}

@@ -1,0 +1,31 @@
+.inactive {
+  display: none;
+}
+
+.sign-up-form, .sign-in-form, .profile-form {
+  position: absolute;
+  width: 250px;
+  background: white;
+  padding: 20px;
+  padding-top: 0;
+  right: 25px;
+  margin-top: 15px;
+  z-index: 100;
+  border: 1px solid #ccc;
+}
+
+.profile-form {
+  color: black !important;
+  width: 200px;
+  padding-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .sign-up-form, .sign-in-form, .profile-form {
+    right: 11px;
+  }
+
+  .sign-up-form h6, .sign-in-form h6 {
+    text-align: center !important;
+  }
+}

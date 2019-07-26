@@ -1,0 +1,20 @@
+.slide-container {
+  width: 70%;
+  margin: auto;
+}
+
+.each-slide > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 300px;
+}
+.react-slideshow-container .nav:first-of-type {
+  left: 20px;
+  position: relative;
+}
+
+.react-slideshow-container .nav:last-of-type {
+  margin-left: -50px !important;
+}
