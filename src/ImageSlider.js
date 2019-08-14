@@ -4,8 +4,6 @@ import {Slide} from 'react-slideshow-image';
 import './styles/ImageSlider.css';
 
 export default function ImageSlider(props) {
-  const slideImages = props.images.map(img => img.medium.url);
-
   const properties = {
     duration: 5000,
     transitionDuration: 200,
@@ -15,9 +13,9 @@ export default function ImageSlider(props) {
 
   return (
     <Slide {...properties}>
-      {slideImages.map(img => (
-        <div className="each-slide">
-          <div style={{backgroundImage: `url(${img})`}} />
+      {props.images.map((img, i) => (
+        <div className="each-slide" key={`slide-image-${i}`}>
+          <div style={{backgroundImage: `url(${img.medium.url})`}} />
         </div>
       ))}
     </Slide>
